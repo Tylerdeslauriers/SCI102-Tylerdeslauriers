@@ -1,5 +1,8 @@
 from datetime import datetime
 
+def salutations(nom: str) -> str:
+    return f"Bonjour {nom}."
+
 def age(annee_naissance: int) -> str:
     annee_courante = datetime.now().year
     age_calcule = annee_courante - int(annee_naissance)
